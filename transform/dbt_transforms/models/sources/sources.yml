@@ -1,0 +1,13 @@
+sources:
+  - name: datacenters # dbt's "friendly" name for the source
+    database: raw
+    schema: datacenters
+    tables:
+      - name: data_center_atlas
+
+  # - name: electricity # dbt's "friendly" name for the source
+  #   database: raw
+  #   schema: electricity
+  #   tables:
+  #     - name: state_metrics
+

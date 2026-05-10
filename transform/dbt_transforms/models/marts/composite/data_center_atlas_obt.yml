@@ -1,0 +1,47 @@
+models:
+  - names: data_center_atlas_obt
+    description: This table contains records of current and decommissioned data centers
+
+    columns:
+      - name: id
+        description: unique identification number for the data center
+        tests:
+          - unique
+          - not_null
+
+      - name: state
+        description: name of US state
+
+      - name: state_abb
+        description: two letter US state abbreviation
+
+      - name: state_id
+        description: state ID number
+
+      - name: county
+        description: name of US county
+
+      - name: county_id
+        description: county ID number
+
+      - name: ref
+        description: reference numbers or codes (OSM-provided)
+
+      - name: operator
+        description: the name of the company, corporation, or person in charge facility (OSM-provided)
+
+      - name: name
+        description: name of facility (OSM-provided)
+
+      - name: sqft
+        description: surface area of facility polygon, measured in square feet. Only available for "building" and "campus" layers
+
+      - name: lat
+        description: latitude of data centroid point
+
+      - name: lon
+        description: longitude of data centroid point
+
+      - name: type
+        description: represented spatial information. One of "point", "building", or "campus"
+
