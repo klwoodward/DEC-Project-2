@@ -39,6 +39,8 @@ models:
       +database: staging
       datacenters:
         +schema: datacenters
+      scd_datacenters:
+        +schema: scd_datacenters      
       electricity: 
         +schema: electricity
     marts:

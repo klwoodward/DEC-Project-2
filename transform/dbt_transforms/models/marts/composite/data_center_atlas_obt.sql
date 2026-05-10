@@ -1,7 +1,5 @@
---{{ config(materialized='view') }}
-
-
--- collapse data so that grain of table is a datacenter, not datacenter/county combo
+-- data centers from im3 and whether or not they are still active
+-- collapses data so that grain of table is a datacenter, not datacenter/county combo
 WITH ranked AS (
     SELECT
         *,
@@ -40,10 +38,7 @@ SELECT
     p.sqft,
     p.lon,
     p.lat,
-    p.type,
-    p.service_start_date,
-    TO_DATE(p._ab_cdc_deleted_at) AS decommission_date,
-    p._ab_cdc_updated_at AS source_updated_at
+    p.type
 FROM 
     primary_county p
     LEFT JOIN secondary_county s

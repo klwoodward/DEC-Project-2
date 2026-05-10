@@ -5,9 +5,15 @@ sources:
     tables:
       - name: data_center_atlas
 
-  # - name: electricity # dbt's "friendly" name for the source
-  #   database: raw
-  #   schema: electricity
-  #   tables:
-  #     - name: state_metrics
+  - name: scd_datacenters # dbt's "friendly" name for the source
+    database: raw
+    schema: scd_datacenters
+    tables:
+      - name: scd_data_center_atlas
+
+  - name: electricity # dbt's "friendly" name for the source
+    database: raw
+    schema: electricity
+    tables:
+      - name: state_electricity_profiles
 
