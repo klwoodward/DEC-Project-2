@@ -43,3 +43,5 @@ FROM
     primary_county p
     LEFT JOIN secondary_county s
         ON p.id = s.id
+
+
