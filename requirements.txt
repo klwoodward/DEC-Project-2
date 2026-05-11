@@ -1,0 +1,10 @@
+ruff
+sqlfluff
+pandas
+sqlfluff-templater-dbt
+dbt-core
+dbt-duckdb
+pytest
+boto3
+ipykernel
+dbt-snowflake
