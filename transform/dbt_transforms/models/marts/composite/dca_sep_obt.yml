@@ -1,0 +1,6 @@
+models:
+  - name: dca_sep_obt
+    columns:
+      - name: state
+        tests:
+          - not_null

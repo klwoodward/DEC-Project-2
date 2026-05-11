@@ -5,7 +5,7 @@ dbt_transforms:
       type: snowflake
       account: "{{env_var('SNOWFLAKE_ACCOUNT')}}"
 
-      # User/password auth
+      # User/password authorization
       user: "{{env_var('SNOWFLAKE_USERNAME')}}"
       password: "{{env_var('SNOWFLAKE_PASSWORD')}}"
 

@@ -37,3 +37,6 @@ FROM {{ source('scd_datacenters', 'scd_data_center_atlas') }}
 {% if is_incremental() %}
     WHERE _ab_cdc_updated_at >= (SELECT MAX(_ab_cdc_updated_at) FROM {{this}} )
 {% endif %}
+
+
+

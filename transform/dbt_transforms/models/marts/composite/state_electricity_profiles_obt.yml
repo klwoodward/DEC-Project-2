@@ -1,0 +1,16 @@
+models:
+  - name: state_electricity_profiles_obt
+    columns:
+      - name: direct_use_units
+        tests:
+          - single_distinct_value
+
+      - name: average_retail_price_units
+        tests:
+          - single_distinct_value
+
+      - name: direct_use_rank
+        tests:
+          - column_greater_or_equal:
+              arguments:
+                min_value: 1

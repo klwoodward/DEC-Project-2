@@ -1,0 +1,12 @@
+models:
+  - name: fact_new_datacenters
+    columns:
+      - name: id
+        tests:
+          - unique
+
+      - name: service_start_date
+        tests:
+          - date_inclusive_between:
+              start_date: '2008-01-01'
+              end_date: '2024-12-31'

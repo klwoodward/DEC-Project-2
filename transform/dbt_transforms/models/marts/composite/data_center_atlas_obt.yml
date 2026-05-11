@@ -1,0 +1,11 @@
+models:
+  - name: data_center_atlas_obt
+    tests:
+      - assert_differing_col_values:
+          column_a: county_id
+          column_b: second_county_id
+
+    columns:
+      - name: type
+        tests:
+          - assert_datacenter_type
