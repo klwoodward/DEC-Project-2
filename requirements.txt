@@ -1,10 +1,9 @@
-ruff
-sqlfluff
-pandas
-sqlfluff-templater-dbt
+dagster
+dagster-cloud
+dagster-airbyte
+dagster-dbt
+dagster-snowflake
 dbt-core
-dbt-duckdb
-pytest
-boto3
-ipykernel
 dbt-snowflake
+loguru
+pandas

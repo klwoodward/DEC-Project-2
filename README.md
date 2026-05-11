@@ -250,6 +250,8 @@ U.S. Energy Information Administration:
     - Airbyte client info can be found at...
         - Airbyte Cloud > User > Setting > Applications > Create an Application, then after entering a name you can retrieve Client Id and Client Secret
         - Airbyte Cloud > Workspace Settings to get the Workspace ID at the top right
+2. Navigate to the dagster folder and run `dagster dev`
+    - click on the link that pops up for local host
 
 ### Preset
 
@@ -260,7 +262,7 @@ U.S. Energy Information Administration:
 ![Preset.png](pics/preset_dashboard.png)
 
 ### LLM AI
-1. With Snowflake Cloud you can create an Semantic View with Cortex Analyst, but if you try to deploy an agent you will hit a paywall.
+1. With Snowflake Cloud you can create a Semantic View with Cortex Analyst, but if you try to deploy an agent you will hit a paywall.
 
 
 
