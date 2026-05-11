@@ -234,11 +234,15 @@ U.S. Energy Information Administration:
         select * from marts.composite.data_center_atlas_obt;
         select * from marts.factdim.dim_date;
         select * from marts.factdim.dim_state;
-        select * from marts.factdim.dim_operator_scd;
+        select * from marts.factdim.dim_operator_scd; -- unfinished...unfortunately
         select * from marts.factdim.fact_new_datacenters;
         select * from marts.factdim.fact_new_datacenters_snapshot;
         ```
 
+![dbt_lineage.png](pics/dbt_lineage.png)
+
+
+![fact-dim-model.png](pics/fact-dim-model.png)
 
 ### Dagster
 
