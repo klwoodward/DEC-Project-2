@@ -29,6 +29,7 @@ class CustomDagsterAirbyteTranslator(DagsterAirbyteTranslator):
                 props.table_name,
             ]),
             group_name="airbyte_assets",
+            automation_condition=AutomationCondition.on_cron(cron_schedule="*/6 * * * *") # every 6 min
         )
 
 airbyte_workspace = AirbyteCloudWorkspace(
